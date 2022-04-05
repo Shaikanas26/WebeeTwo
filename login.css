@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+font-family: Poppins,sans-serif;
+}
+body{
+    
+    
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+    /* background-color: rgb(138, 84, 84); */
+}
+section{
+    position: relative;
+width:90vw;
+height: 90vh;
+background-color: white;
+
+display: flex;
+-webkit-box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75);
+border-radius: 20px;
+z-index: 100;
+}
+main::after{
+    content: "";
+    width: 500px;
+    height: 250px;
+    background-color: rgba(128, 128, 128, 0.218);
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+}
+main::before{
+    content: "";
+    width: 500px;
+    height: 200px;
+    background-color: rgba(0, 128, 255, 0.521);
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom:0 ;
+}
+.docimg{
+    /* background-color: red; */
+
+position: relative;
+width: 50%;
+height:100%;
+
+
+
+}
+.docimg>img{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.docimg::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(3, 183, 249, 0.727),rgb(23, 23, 236));
+    z-index: 1;
+    mix-blend-mode: screen;
+    border-bottom-left-radius: 20px;
+border-top-left-radius: 20px;
+
+}.docimg>img{
+    position:absolute;
+    
+    top:0;
+    left:0; 
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+.content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+
+}
+.form{
+    
+    width:50% ;
+}
+.form>h2{
+    color:#838f95 ;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    border-bottom: 3.5px solid rgb(0, 179, 255);
+    display: inline-block;
+    letter-spacing: 2px;
+}
+.form>label>input{
+    
+    margin-top: 5px;
+
+}
+.form>label>span{
+    margin-bottom:10px ;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: #bac6ccb0;
+
+}
+.form>label>input{
+    width:100%;
+    padding:10px 20px;
+    font-weight:400 
+    ;
+    border:1px solid #9bb2bd;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color:#838f95;
+ 
+   border-radius:30px ;
+    background: transparent;
+}
+
+.check{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    padding:10px 20px;
+    font-weight:400;
+    margin-left: 20px 
+    ;
+    
+   
+    letter-spacing: 1px;
+    color:#838f95;
+}
+.rem{
+    margin-bottom: 20px;
+}
+a>button{
+    width:100% ;
+    font-size:20px;
+    color: rgb(77, 79, 81);
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid white;
+    
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 1px #838f95 ;
+    background-color:rgb(0, 179, 255) ;
+    color:#5e6063 ;
+}
+
+.social>ul{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+ul>li{
+    list-style: none;
+    width: 50px;
+    height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: white;
+   border-radius: 50%;
+   margin:0 7px;
+   cursor: pointer;
+}
+.social>h3{
+    
+    padding-left: 75px ;
+    padding-top: 40px;
+}
+ul>li:hover{
+    background:rgb(0, 179, 255);
+}
+ul>li{
+    transform:scale(0.8) ;
+    filter:invert(blue);
+    
+
+}
+@media screen and (max-width:900px) {
+    
+    .docimg{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height: 100%;
+    }
+    .content{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    }
+    .form{
+        width: 100%;
+        padding:40px;
+        background:rgb(240, 240, 240,0.5) ;
+        margin:50px;
+        
+    }
+}

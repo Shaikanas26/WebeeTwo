@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@500&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Montserrat,sans-serif ;
+    overflow: hidden;
+}
+section{
+    position: relative;
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.Doctor{
+   
+    background-color: rgba(0, 128, 255, 0.521);
+    width:300px;
+    height:500px;
+ 
+    align-items: center;
+    justify-content: center;
+     border:2px solid white ;
+     border-radius: 30px;
+     position: relative;
+ 
+   
+     
+ 
+
+
+}
+.DoctorImage{
+    
+  
+     background-position: center;
+     background-size: cover;
+    height: 100%;
+    width: 100%;
+    filter: blur(8px
+    ); 
+     position: relative;
+    z-index: 1;
+}
+.add{
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    left: 0;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Department{
+    background-color: rgba(0, 128, 255, 0.521);
+    width:300px;
+    height:500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid white ;
+     border-radius: 30px;
+     position: relative;
+}
+ .Patient{
+     padding-right:20px;
+    background-color: rgba(0, 128, 255, 0.521);
+    width:300px;
+    height:500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid white ;
+     border-radius: 30px;
+     position: relative;
+
+} 
+h3{
+    padding:10px 20px; 
+    border:2px solid rgba(0, 128, 255, 0.521) ;
+    border-radius: 30px;
+    color:black;
+    cursor:pointer;
+}
+h3:hover{
+    color:rgb(128, 128, 128);
+    background-color:white ;
+}
+.Doctor:hover{
+    box-shadow: -webkit-box-shadow 0px 0px 10px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75);
+    border-radius: 20px; ;
+}
+.Department:hover{
+    -webkit-box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75);
+border-radius: 20px;
+}
+.Patient:hover{
+    -webkit-box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75);
+border-radius: 20px;
+}
+@media screen and (max-width:900px) {
+    .Doctor{
+        margin-right: 20px;
+        margin-left: 10px;
+
+    }
+    .Department{
+        margin-right: 20px;
+    }
+    .Patient{
+        margin-right: 10px;
+    }
+
+    
+}
+.Doctor{
+    
+    animation-name: doc;
+    animation-delay: 0s;
+    animation-duration: 4s;
+   
+}
+@keyframes doc {
+    0%{
+        transform: translateX(-400px);
+    }
+    
+}
+.Department{
+    animation-name: dep;
+    animation-duration: 4s;
+    animation-delay: 0s;
+
+}
+@keyframes dep {
+    0%{
+        transform: translateY(-400px);
+    }
+    
+}
+.Patient{
+    animation-name: pa;
+    animation-duration: 4s;
+    animation-delay: 0s;
+}
+@keyframes pa {
+    0%{
+        transform: translateX(400px);
+    }
+    
+}
